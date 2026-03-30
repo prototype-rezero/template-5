@@ -120,7 +120,7 @@ header .container .holder a:hover {
     background-color: transparent;
     color: var(--white);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.25);
-    transform: scale(1.05);
+    transform: scale(1.0);
 }
 
 /* section */
@@ -129,7 +129,7 @@ section {
     height: calc(100vh - 87.5px);
     display: flex;
     flex-direction: column;
-    padding-top: calc(100vh - 45%);
+    padding-top: 150px;
 }
 section .container {
     padding: 0 20px;
@@ -169,6 +169,13 @@ section .center .leftside a {
     color: var(--grey);
     transition: 0.3s;
     width: fit-content;
+}
+section .center .leftside a:hover {
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 500;
+    box-shadow: 10px -5px 25px -5px rgba(255, 255, 255, 0.25), -10px 5px 25px -5px rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
 }
 section .center .leftside .cards{
     display: flex;
