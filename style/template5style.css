@@ -88,11 +88,11 @@ span.light1 {
         opacity: 0.25;
     }
     30% {
-        height: 1050px;
+        height: 1020px;
         opacity: 1;
     }
         60% {
-            height: 900px;
+            height: 980px;
             opacity: 0.75;
         }
     100% {
