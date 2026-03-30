@@ -412,11 +412,20 @@ h1 {
     font-size: 14px;
     color: grey;
 }
-.link a {
+.link2 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: grey;
+    text-align: right;
+}
+.link a, .link2 a {
     color: var(--grey);
     transition: 0.3s;
 }
-.link a:hover {
+.link a:hover, .link2 a:hover {
     font-weight: 600;
 }
 
