@@ -68,6 +68,98 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 } 
 /* end of global rules */
+span.light1 {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    animation: animate 5s linear infinite;
+    z-index: 5;
+    top: -400px;
+    right: 50px;
+    height: 1000px;
+    width: 10px;   
+    filter: blur(40px);
+    transform: rotate(35deg);
+    animation: glowing 15s linear infinite;
+}
+@keyframes glowing {
+    0% {
+        opacity: 0.25;
+    }
+    30% {
+        height: 1050px;
+        opacity: 1;
+    }
+        60% {
+            height: 900px;
+            opacity: 0.75;
+        }
+    100% {
+        opacity: 0.25;
+    }
+}   
+span.light2 {
+      position: absolute;
+    border-radius: 50%;
+    background-color: rgb(255 255 255);
+    animation: animate 5s linear infinite;
+    z-index: 5;
+    top: -400px;
+    right: 200px;
+    height: 1000px;
+    width: 14px;
+    filter: blur(40px);
+    transform: rotate(40deg);
+ animation: glowing2 10s linear infinite;
+}
+@keyframes glowing2 {
+    0% {
+        opacity: 0.25;
+    }
+    30% {
+        height: 1020px;
+        opacity: 1;
+    }
+        60% {
+            height: 980px;
+            opacity: 0.75;
+        }
+    100% {
+        opacity: 0.25;
+    }
+}  
+
+span.light3 {
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgb(255 255 255);
+        animation: animate 5s linear infinite;
+        z-index: 5;
+        top: -400px;
+        right: 350px;
+        height: 1000px;
+        width: 20px;
+        filter: blur(40px);
+        transform: rotate(45deg);
+        animation: glowing3 12.5s linear infinite;
+}
+@keyframes glowing3 {
+    0% {
+        opacity: 0.25;
+    }
+    30% {
+        height: 1020px;
+        opacity: 1;
+    }
+    60% {
+        height: 980px;
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 0.25;
+    }
+}  
+
 header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -138,12 +230,14 @@ section .center {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 section .center .leftside {
     width: 32%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    z-index: 4;
 }
 section .center .leftside > p:first-of-type {
     font-size: 26px;
@@ -234,13 +328,55 @@ section .center .leftside .cards .card:nth-child(2):hover {
     transform: translateY(-5px);
 }
 
+section .center .rightside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+    align-items: flex-end;
+}
+section .center .rightside p:first-of-type {
+    font-size: 64px;
+    line-height: 1.0;
+    text-align: right;
+    font-weight: 500;
+    z-index: 10;
+}
+section .center .rightside p:first-of-type span {
+    font-size: 16px;
+    height: 50px;
+    transform: translateY(-16px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 22px;
+    border-radius: 30px;
+    border: 2px solid var(--white);
+    margin: 0 3px;
+    margin-bottom: -20px;
+}
+section .center .rightside p:last-of-type {
+    font-size: 18px;
+    line-height: 1.1;
+    color: var(--white);
+    font-weight: 300;
+    word-spacing: 1px;
+    text-align: left;
+    
+}
+section .center .rightside p:last-of-type span {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+}
 img.hand {
     width: 370px;
     bottom: -100px;
     left: 50%;
     transform: translateX(-50%) rotate(-25deg);
     position: fixed;
-    z-index: -1;
+    z-index: 5;
 }
 section > img:last-of-type {
     width: 280px;
@@ -248,24 +384,25 @@ section > img:last-of-type {
     left: 41%;
     transform: translateX(-50%) rotate(20deg);
     position: fixed;
-    z-index: -1;
+    z-index: 6;
 }
 h1 {
     font-size: 220px;
     font-weight: 300;
     color: var(--white);
-    position: fixed;
+    position: absolute;
     line-height: 0.8;
-    bottom: -2%;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%) ;
-    background:linear-gradient(0deg, rgb(78, 78, 78), white);
+    background:linear-gradient(0deg, rgb(29, 29, 29), white);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 3px;
     margin: 0;
+
     font-family: "zen dots", "cursive";
 
 }
