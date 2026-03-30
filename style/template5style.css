@@ -221,7 +221,7 @@ section {
     height: calc(100vh - 87.5px);
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: 125px;
 }
 section .container {
     padding: 0 20px;
