@@ -54,6 +54,7 @@ input, button, textarea, select {
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1;  
+    margin: 0;
 }
 .container {
     max-width: 1280px;
@@ -128,7 +129,7 @@ section {
     height: calc(100vh - 87.5px);
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: calc(100vh - 45%);
 }
 section .container {
     padding: 0 20px;
@@ -209,13 +210,13 @@ section .center .leftside .cards .card:nth-child(1) .partners img {
     width: 85px;
 }
 section .center .leftside .cards .card:nth-child(2) {
-    background: #dadada1e;
+    background: #dadada15;
     color: var(--grey);
     box-shadow:  inset -10px -10px 20px #dadada09, inset 10px 10px 20px #00000031;
-    border-top: 2px solid #e4e4e41e;
-    border-left: 2px solid #e4e4e41e;
-    border-right: 1px solid #e4e4e41e;
-    border-bottom: 1px solid #e4e4e41e;
+    border-top: 1px solid rgba(235, 235, 235, 0.212);
+    border-left: 1px solid rgba(235, 235, 235, 0.212);
+    border-right: 1px solid rgba(235, 235, 235, 0.103);
+    border-bottom: 1px solid rgba(235, 235, 235, 0.103);
     transition: 0.3s;
 }
 section .center .leftside .cards .card:nth-child(2) p {
@@ -225,26 +226,40 @@ section .center .leftside .cards .card:nth-child(2):hover {
     box-shadow:   inset -10px -10px 20px #dadada09, inset 10px 10px 20px #00000031, 0 0 50px rgba(255, 255, 255, 0.192);
     transform: translateY(-5px);
 }
-.imgs {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-.imgs img:first-child {
+
+img.hand {
     width: 370px;
     bottom: -100px;
     left: 50%;
     transform: translateX(-50%) rotate(-25deg);
-    position: absolute;
+    position: fixed;
+    z-index: -1;
 }
-.imgs img:last-child {
+section > img:last-of-type {
     width: 280px;
     bottom: 440px;
     left: 41%;
     transform: translateX(-50%) rotate(20deg);
-    position: absolute;
+    position: fixed;
+    z-index: -1;
+}
+h1 {
+    font-size: 220px;
+    font-weight: 300;
+    color: var(--white);
+    position: fixed;
+    line-height: 0.8;
+    bottom: -2%;
+    left: 50%;
+    transform: translateX(-50%) ;
+    background:linear-gradient(0deg, rgb(78, 78, 78), white);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 3px;
+    margin: 0;
+    font-family: "zen dots", "cursive";
+
 }
 
