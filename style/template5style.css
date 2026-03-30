@@ -402,8 +402,21 @@ h1 {
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 3px;
     margin: 0;
-
     font-family: "zen dots", "cursive";
-
+}
+.link {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: grey;
+}
+.link a {
+    color: var(--grey);
+    transition: 0.3s;
+}
+.link a:hover {
+    font-weight: 600;
 }
 
