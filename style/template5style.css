@@ -258,6 +258,7 @@ section .center {
     }
     .hand {
         height: 760px !important;
+        bottom: -120px !important;
     }
     section > img:last-of-type {
         height: 195px !important;
